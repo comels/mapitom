@@ -1,8 +1,8 @@
 const Footer = () => {
   // Composant Footer : affiche les informations de contact, les horaires et les liens vers les réseaux sociaux
   return (
-    <footer className="bg-white mx-3 pt-10 pb-5">
-      <div className="grid sm:grid-cols-3 gap-10 items-center">
+    <footer className="bg-white px-3 pt-10 pb-5">
+      <div className="grid md:grid-cols-3 gap-10 items-center">
         {/* Section du logo et adresse */}
         <div className="flex flex-col mx-auto">
           <h1 className="font-extrabold text-gray-800 text-center mb-2 text-3xl tracking-tighter">
@@ -24,7 +24,7 @@ const Footer = () => {
               <span className="font-bold">Pereire</span>
             </p>
             <a href="tel:+33142949672">
-              <h2 className="font-medium text-gray-900  mt-5 ">
+              <h2 className="font-medium mt-5 bg-teal-700 text-white p-2 rounded-xl">
                 01 42 63 83 29
               </h2>
             </a>
@@ -37,7 +37,9 @@ const Footer = () => {
             11h30 à 15h15 - 18h15 à 22h30
           </p>
 
-          <h2 className="font-semibold text-base mb-1">Le Samedi et Dimanche</h2>
+          <h2 className="font-semibold text-base mb-1">
+            Le Samedi et Dimanche
+          </h2>
           <p className="text-sm text-gray-700">11h30 à 16h00 - 18h30 à 22h30</p>
         </div>
         {/* Liens vers les réseaux sociaux et partenaires */}
