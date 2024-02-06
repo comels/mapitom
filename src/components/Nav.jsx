@@ -3,7 +3,6 @@ import { Dialog, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 
-
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -59,6 +58,12 @@ const Navigation = () => {
             menu
           </NavLink>
           <NavLink
+            to="/galerie"
+            className="text-normal font-light leading-6 text-gray-900  hover:font-medium hover:font-normal"
+          >
+            photos
+          </NavLink>
+          <NavLink
             to="/contact"
             className="text-normal font-light leading-6 text-gray-900 hover:font-normal"
           >
@@ -84,7 +89,9 @@ const Navigation = () => {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
-              <img className="h-12 sm:h-16" src="logo.png" alt="" />
+              <h1 className="font-extrabold text-gray-800 text-4xl tracking-tight">
+                Mapitom
+              </h1>
             </NavLink>
             <button
               type="button"
@@ -112,6 +119,12 @@ const Navigation = () => {
                   Menu
                 </NavLink>
                 <NavLink
+                  to="/galerie"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-light leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Photos
+                </NavLink>
+                <NavLink
                   to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50"
                 >
@@ -121,11 +134,29 @@ const Navigation = () => {
               <div className="py-6">
                 <div className="flex gap-6 justify-center">
                   <a
-                    href="https://www.tripadvisor.fr/Restaurant_Review-g187147-d793280-Reviews-Le_Maharaja-Paris_Ile_de_France.html"
+                    href="https://www.instagram.com/mapitomparis/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="h-10"
+                      src="instagram.jpeg"
+                      alt="Instagram"
+                    />
+                  </a>
+                  <a
+                    href="https://www.tripadvisor.fr/Restaurant_Review-g187147-d19451347-Reviews-Mapitom-Paris_Ile_de_France.html"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img className="h-10" src="tripadvisor.png" alt="" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/mapitom.paris17"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img className="h-10" src="facebook.svg" alt="Facebook" />
                   </a>
                   <a
                     href="https://deliveroo.fr/fr/menu/paris/courcelles-wagram/mapitom"
