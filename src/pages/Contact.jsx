@@ -47,9 +47,9 @@ export default function Example() {
                   <dd>
                     <a
                       className="text-gray-800 font-light"
-                      href="tel:0142949672"
+                      href="tel:0140547105"
                     >
-                      01 42 94 96 72
+                      01 40 54 71 05
                     </a>
                   </dd>
                 </div>

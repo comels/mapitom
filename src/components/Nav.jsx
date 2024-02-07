@@ -15,7 +15,7 @@ const Navigation = () => {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
-            <img className="h-12" src="logo.png" alt="" />
+            <img className="h-10 sm:h-12" src="logo.png" alt="" />
           </NavLink>
         </div>
         {/* Logo menu burger pour mobile */}
