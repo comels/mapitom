@@ -70,18 +70,22 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p className="text-center mt-16 font-light text-gray-800 text-xs">
-        Copyright © 2024 -{" "}
-        <a
-          href="https://www.linkedin.com/in/comels/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:font-normal"
-        >
-          Côme Le Sauter
-        </a>{" "}
-        - développeur web
-      </p>
+      <div className="items-center flex flex-col mt-16">
+        <p className="font-light text-gray-800 mb-1 text-xs">
+          © Mapitom - Tous droits réservés - 2024{" "}
+        </p>
+        <p className="font-light text-gray-800 text-xs">
+          Réalisé par{" "}
+          <a
+            href="https://www.linkedin.com/in/comels/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-teal-600"
+          >
+            Côme Le Sauter
+          </a>
+        </p>
+      </div>
     </footer>
   );
 };
