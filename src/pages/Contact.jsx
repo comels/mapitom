@@ -53,22 +53,6 @@ export default function Example() {
                     </a>
                   </dd>
                 </div>
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <EnvelopeIcon
-                      className="h-7 w-6 text-teal-600"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd>
-                    <a
-                      className="text-gray-800 font-light"
-                      href="mailto:maharaja.restaurant.paris@gmail.com"
-                    >
-                      mapitom@gmail.com
-                    </a>
-                  </dd>
-                </div>
               </dl>
             </div>
           </div>
