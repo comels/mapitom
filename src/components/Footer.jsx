@@ -5,9 +5,7 @@ const Footer = () => {
       <div className="grid md:grid-cols-3 gap-10 items-center">
         {/* Section du logo et adresse */}
         <div className="flex flex-col mx-auto">
-          <h1 className="font-extrabold text-gray-800 text-center mb-2 text-3xl tracking-tighter">
-            Mapitom
-          </h1>
+          <img className="h-auto w-32 mx-auto mb-4" src="logo.png" alt="" />
 
           <div className="text-center">
             <a
@@ -15,16 +13,16 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="text-base text-gray-800">
+              <p className="text-lg text-gray-800 hover:text-teal-700">
                 87 avenue Niel, Paris 75017
               </p>
             </a>
-            <p className="text-base mb-3 justify-center flex gap-2 items-center text-gray-800">
+            <p className="text-lg mb-3 justify-center flex gap-2 items-center text-gray-800">
               Métro : <img className="h-4" src="ligne-3.png" alt="" />{" "}
               <span className="font-bold">Pereire</span>
             </p>
             <a href="tel:+33142949672">
-              <h2 className="font-medium mt-5 bg-teal-700 text-white p-2 rounded-xl">
+              <h2 className="font-medium mt-5 bg-teal-600 text-white py-2 rounded-xl">
                 01 42 63 83 29
               </h2>
             </a>
@@ -32,14 +30,12 @@ const Footer = () => {
         </div>
         {/* Horaires et contact */}
         <div className="flex flex-col items-center">
-          <h2 className="font-semibold text-base mb-1">Du Lundi au Jeudi</h2>
-          <p className="text-sm mb-4 text-gray-700">
+          <h2 className="font-medium mb-1">DU LUNDI AU JEUDI</h2>
+          <p className="text-sm mb-6 text-gray-700">
             11h30 à 15h15 - 18h15 à 22h30
           </p>
 
-          <h2 className="font-semibold text-base mb-1">
-            Le Samedi et Dimanche
-          </h2>
+          <h2 className="font-medium mb-1">SAMEDI ET DIMANCHE</h2>
           <p className="text-sm text-gray-700">11h30 à 16h00 - 18h30 à 22h30</p>
         </div>
         {/* Liens vers les réseaux sociaux et partenaires */}

@@ -10,6 +10,9 @@ export default {
       screens: {
         phone: "360px",
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
