@@ -21,8 +21,9 @@ const Footer = () => {
               Métro : <img className="h-4" src="ligne-3.png" alt="" />{" "}
               <span className="font-bold">Pereire</span>
             </p>
+            <p className="text-lg font-medium">Réserver au</p>
             <a href="tel:0140547105">
-              <h2 className="font-medium mt-5 bg-teal-600 text-white py-2 rounded-xl">
+              <h2 className="font-medium mt-1 bg-teal-600 text-white py-2 rounded-xl">
                 01 40 54 71 05
               </h2>
             </a>
