@@ -11,7 +11,11 @@ const Menu = () => {
       >
         <Nav />
         <div className="flex justify-center items-center h-full">
-          <img className="h-80 mb-10 sm:mb-0 sm:h-96" src="logo-blanc.png" alt="" />
+          <img
+            className="h-80 mb-32 sm:mb-0 sm:h-96"
+            src="logo-blanc.png"
+            alt=""
+          />
         </div>
       </div>
       <Footer />
