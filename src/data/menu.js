@@ -15,7 +15,7 @@ const starters = [
     description: "Pois chiche, tahini, citron, zaatar, viande de boeuf",
   },
   {
-    name: "Labneh selon l'humeur de la cheffe",
+    name: "Labneh selon l'humeur du chef",
     price: 13,
     description: "Fromage libanais, chutney, zaatar et pistache.",
   },
