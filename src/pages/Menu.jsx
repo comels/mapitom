@@ -44,7 +44,7 @@ const Menu = () => {
   return (
     <div className="bg-stone-100">
       <Nav />
-      <div className="max-w-6xl my-24 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl my-20 mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-extrabold pt-10 text-gray-800 tracking-tighter mx-6 mb-3 border-b-2 border-dotted pb-6 border-gray-500 text-5xl sm:text-7xl">
           Menu
         </h1>
