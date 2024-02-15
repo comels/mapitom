@@ -7,9 +7,9 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header>
+    <header className="fixed z-20 top-0 w-full">
       <nav
-        className="mx-auto z-10 bg-white flex max-w-8xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto bg-white flex max-w-8xl items-center justify-between p-5 lg:px-8"
         aria-label="Global"
       >
         {/* Logo */}

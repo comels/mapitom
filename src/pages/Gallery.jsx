@@ -21,9 +21,9 @@ const Gallery = () => {
   );
 
   return (
-    <div className="bg-stone-100">
+    <div className="bg-stone-100 mt-24">
       <Nav />
-      <div className="m-8 sm:m-12 md:m-16 lg:m-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <div className="m-8 pt-10 md:pt-20 sm:m-12 md:m-16 lg:m-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {images.map((src, index) => (
           <Image key={index} src={src} alt="" />
         ))}

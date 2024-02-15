@@ -24,13 +24,13 @@ export default function Illustration() {
           {incentives.map((incentive) => (
             <div
               key={incentive.name}
-              className="flex justify-center lg:my-0 my-5 text-left lg:text-center"
+              className="flex justify-center text-left lg:text-center"
             >
               <div className="lg:mt-3">
-                <h3 className="lg:text-2xl text-xl tracking-widest font-light text-gray-800">
+                <h3 className="lg:text-2xl text-xltext-gray-800 tracking-widest">
                   {incentive.name}
                 </h3>
-                <p className="lg:mt-5 mt-2 mx-auto max-w-sm text-gray-600">
+                <p className="lg:mt-5 mt-2 mx-auto max-w-sm font-extralight text-gray-600">
                   {incentive.description}
                 </p>
               </div>
