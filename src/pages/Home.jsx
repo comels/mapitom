@@ -5,7 +5,7 @@ import Illustration from "../components/IllustrationHeader";
 
 const Menu = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-14">
       <div
         className="bg-cover h-screen bg-center flex flex-col justify-center"
         style={{ backgroundImage: "url('bandeau-mapitom.jpeg')" }}
