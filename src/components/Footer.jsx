@@ -23,7 +23,7 @@ const Footer = () => {
             </p>
             <p className="text-lg font-medium">Réserver au</p>
             <a href="tel:0140547105">
-              <h2 className="font-medium mt-1 bg-teal-600 text-white py-2 rounded-xl">
+              <h2 className="font-extrabold text-lg mt-2 hover:text-teal-700">
                 01 40 54 71 05
               </h2>
             </a>

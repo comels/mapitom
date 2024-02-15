@@ -5,7 +5,7 @@ import { starters, sides, veges, streets, plats, sweets } from "../data/menu";
 
 const MenuCategory = ({ title, items }) => (
   <div className="my-6 border-b-2 border-dotted pb-6  border-gray-500">
-    <h2 className="text-3xl  text-teal-600 font-extrabold tracking-tighter mt-6 mb-4">
+    <h2 className="text-3xl text-teal-600 font-extrabold tracking-tighter mt-6 mb-4">
       {title}
     </h2>
     {items.map((item, index) => (

@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Illustration from "../components/IllustrationHeader";
 
 const Menu = () => {
   return (
@@ -18,6 +19,7 @@ const Menu = () => {
           />
         </div>
       </div>
+      <Illustration />
       <Footer />
     </div>
   );
