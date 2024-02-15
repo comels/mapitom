@@ -15,7 +15,7 @@ const Navigation = () => {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
-            <img className="h-10 sm:h-12" src="logo.png" alt="" />
+            <img className="h-10 sm:h-12" src="logo.png" alt="logo-navbar" />
           </NavLink>
         </div>
         {/* Logo menu burger pour mobile */}
@@ -30,7 +30,7 @@ const Navigation = () => {
           </button>
         </div>
         {/* Menu principal */}
-        <Popover.Group className="hidden md:flex items-center md:gap-x-12">
+        <Popover.Group className="hidden md:flex items-center md:gap-x-16">
           <Popover className="relative">
             <Transition
               as={Fragment}
@@ -42,38 +42,36 @@ const Navigation = () => {
               leaveTo="opacity-0 translate-y-1"
             ></Transition>
           </Popover>
-          <NavLink
-            to="/"
-            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700 hover:font-normal"
-          >
-            accueil
-          </NavLink>
 
           <NavLink
             to="/menu"
-            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700 hover:font-normal"
+            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700"
           >
             menu
           </NavLink>
           <NavLink
             to="/galerie"
-            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700 hover:font-normal"
+            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700"
           >
             photos
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700 hover:font-normal"
+            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700"
           >
             contact
           </NavLink>
           <a
-            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700 hover:font-normal"
+            className="text-lg font-extralight leading-6 text-gray-900 hover:text-teal-700"
             href="https://deliveroo.fr/fr/menu/paris/courcelles-wagram/mapitom"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="h-14" src="deliveroo-nav.png" alt="" />
+            <img
+              className="h-14"
+              src="deliveroo-nav.png"
+              alt="logo-deliveroo-navbar"
+            />
           </a>
         </Popover.Group>
       </nav>
@@ -87,7 +85,7 @@ const Navigation = () => {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
-              <img className="h-10" src="logo.png" alt="" />
+              <img className="h-10" src="logo.png" alt="logo-mapitom-burger" />
             </NavLink>
             <button
               type="button"
@@ -102,29 +100,22 @@ const Navigation = () => {
             <div className="-my-6 divide-y divide-teal-600/10">
               <div className="space-y-2 py-6">
                 <NavLink
-                  to="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 font-light leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Accueil
-                </NavLink>
-
-                <NavLink
                   to="/menu"
                   className="-mx-3 block rounded-lg px-3 py-2 font-light leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Menu
+                  menu
                 </NavLink>
                 <NavLink
                   to="/galerie"
                   className="-mx-3 block rounded-lg px-3 py-2 font-light leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Photos
+                  photos
                 </NavLink>
                 <NavLink
                   to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Contact
+                  contact
                 </NavLink>
               </div>
               <div className="py-6">
@@ -145,7 +136,11 @@ const Navigation = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img className="h-10" src="tripadvisor.png" alt="" />
+                    <img
+                      className="h-10"
+                      src="tripadvisor.png"
+                      alt="logo-tripadvisor"
+                    />
                   </a>
                   <a
                     href="https://www.facebook.com/mapitom.paris17"
@@ -159,7 +154,11 @@ const Navigation = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img className="h-10" src="deliveroo.png" alt="" />
+                    <img
+                      className="h-10"
+                      src="deliveroo.png"
+                      alt="logo-deliveroo"
+                    />
                   </a>
                 </div>
               </div>

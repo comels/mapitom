@@ -11,7 +11,7 @@ export default function Example() {
           <img
             className="h-64 w-full lg:p-10 bg-stone-100 object-cover sm:h-80 lg:absolute lg:h-full"
             src="mapitom-salle.jpeg"
-            alt=""
+            alt="photo-salle-mapitom"
           />
         </div>
         <div className=" lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2">

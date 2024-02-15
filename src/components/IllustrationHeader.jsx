@@ -19,7 +19,7 @@ const incentives = [
 export default function Illustration() {
   return (
     <div className="bg-stone-100">
-      <div className="mx-auto max-w-7xl px-10 py-14">
+      <div className="mx-auto max-w-7xl px-10 lg:py-32 py-14">
         <div className="mx-auto grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-3">
           {incentives.map((incentive) => (
             <div
@@ -27,7 +27,7 @@ export default function Illustration() {
               className="flex justify-center text-left lg:text-center"
             >
               <div className="lg:mt-3">
-                <h3 className="lg:text-2xl text-xltext-gray-800 tracking-widest">
+                <h3 className="lg:text-xl text-gray-800 tracking-widest">
                   {incentive.name}
                 </h3>
                 <p className="lg:mt-5 mt-2 mx-auto max-w-sm font-extralight text-gray-600">
