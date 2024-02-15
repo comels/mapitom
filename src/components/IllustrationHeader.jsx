@@ -19,7 +19,7 @@ const incentives = [
 export default function Illustration() {
   return (
     <div className="bg-stone-100">
-      <div className="mx-auto max-w-7xl px-10 py-24">
+      <div className="mx-auto max-w-7xl px-10 py-14">
         <div className="mx-auto grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-3">
           {incentives.map((incentive) => (
             <div
