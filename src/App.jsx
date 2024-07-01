@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import Home from "./pages/Home";
-import Menu from "./pages/Menu";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
 import NotFound from "./pages/NotFound";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
 const App = () => {
   const ScrollToTop = () => {
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <ScrollToTop />""
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />

@@ -5,7 +5,11 @@ const Footer = () => {
       <div className="grid md:grid-cols-3 gap-10 items-center">
         {/* Section du logo et adresse */}
         <div className="flex flex-col mx-auto">
-          <img className="h-auto w-32 mx-auto mb-4" src="logo.png" alt="logo-footer" />
+          <img
+            className="h-auto w-32 mx-auto mb-4"
+            src="logo.png"
+            alt="logo-footer"
+          />
 
           <div className="text-center">
             <a
@@ -18,7 +22,8 @@ const Footer = () => {
               </p>
             </a>
             <p className="text-lg mb-3 justify-center flex gap-2 items-center text-gray-800">
-              Métro : <img className="h-4" src="ligne-3.png" alt="logo-metro-ligne-3" />{" "}
+              Métro :{" "}
+              <img className="h-4" src="ligne-3.png" alt="logo-metro-ligne-3" />{" "}
               <span className="font-bold">Pereire</span>
             </p>
             <p className="text-lg font-medium">Réserver au</p>

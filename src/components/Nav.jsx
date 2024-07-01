@@ -1,13 +1,13 @@
-import { Fragment, useState } from "react";
 import { Dialog, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Fragment, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed z-20 top-0 w-full">
+    <header className="fixed z-20 top-0 w-full shadow-md">
       <nav
         className="mx-auto bg-white flex max-w-8xl items-center justify-between p-5 lg:px-8"
         aria-label="Global"

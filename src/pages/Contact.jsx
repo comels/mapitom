@@ -1,6 +1,6 @@
 import { MapPinIcon, PhoneIcon } from "@heroicons/react/24/outline";
-import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
 export default function Example() {
   return (
@@ -24,8 +24,8 @@ export default function Example() {
                 <p className="mt-5 font-extralight">
                   Que vous souhaitiez savourer vos plats préférés chez vous,
                   organiser un événement avec un service traiteur personnalisé,
-                  ou profiter d'un moment délicieux dans notre restaurant, nous
-                  sommes là pour vous.
+                  ou profiter d&apos;un moment délicieux dans notre restaurant,
+                  nous sommes là pour vous.
                 </p>
                 <h3 className="mt-10 font-extrabold text-gray-800 tracking-tighter">
                   LIVRAISON
@@ -51,7 +51,7 @@ export default function Example() {
 
                 <p className="mt-10 font-extralight">
                   Pour toute réservation, commande ou demande spécifique,
-                  n'hésitez pas à nous contacter. Nous sommes ravis de vous
+                  n&apos;hésitez pas à nous contacter. Nous sommes ravis de vous
                   accueillir et de faire partie de vos moments gourmands !
                 </p>
               </div>

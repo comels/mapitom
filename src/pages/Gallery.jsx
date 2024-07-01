@@ -1,6 +1,6 @@
-import React from "react";
-import Nav from "../components/Nav";
+/* eslint-disable react/prop-types */
 import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
 // Composant pour l'image
 const Image = ({ src, alt }) => (

@@ -17,7 +17,7 @@ const NotFound = () => {
                 to="/"
                 className="rounded-md mb-10 bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-500"
               >
-                Retour à l'accueil
+                Retour à l&apos;accueil
               </NavLink>
             </div>
           </div>

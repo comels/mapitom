@@ -1,170 +1,183 @@
-const starters = [
+const entrees = [
   {
-    name: "Houmous classic",
-    price: 10.5,
-    description: "Pois chiche, tahini, citron et zaatar.",
-  },
-  {
-    name: "Houmous du moment",
-    price: 10.5,
-    description: "Selon l'humeur de la cheffe.",
+    name: "Houmous classique",
+    price: 10,
+    description: "Pois chiche, tahini, zaatar, paprika.",
   },
   {
     name: "Houmous bassar",
-    price: 14.5,
-    description: "Pois chiche, tahini, citron, zaatar, viande de boeuf",
+    price: 14,
+    description:
+      "À la viande de boeuf (k), tahini, coriandre, zaatar, paprika.",
+  },
+  {
+    name: "Houmous du moment",
+    price: 11,
   },
   {
     name: "Labneh selon l'humeur du chef",
-    price: 13,
-    description: "Fromage libanais, chutney, zaatar et pistache.",
+    price: 12.5,
   },
   {
     name: "Pita truffe fromage",
-    price: 11,
-    description: "Pita, truffe et fromage fondu",
+    price: 10.5,
   },
   {
-    name: "Pita labneh miel pignon",
-    price: 10.5,
-    description: "Pita, labneh, miel et pignon.",
+    name: "Pita labneh miel",
+    price: 10,
   },
   {
     name: "Trio de degustation",
-    price: 14.5,
+    price: 14,
     description: "Petit houmous, petit labneh et salade israélienne.",
   },
 ];
 const veges = [
   {
     name: "Aubergine",
-    price: 10.5,
+    price: 12,
     description:
-      "Tahini, piment, coriandre, miel de datte, grenade, cébette, pickles.",
+      "Tahini, piment, coriandre, miel de datte, grenade, cébette, pickels.",
   },
   {
     name: "Patate douce",
-    price: 14.5,
-    description: "Tahini, grenade, datte, féta, noisette, cébette, pickles.",
+    price: 12,
+    description: "Tahini, grenade, datte, féta, noisette, cébette, pickels.",
   },
   {
     name: "Chou-fleur",
+    price: 12,
+    description:
+      "Beurre de cacahuète, lait de coco, curry rouge, grenade, noisettes.",
+  },
+  {
+    name: "Carottes fanes",
+    price: 11.5,
+    description: "Sauce yaourt, tahini, aneth, pistache, grenade.",
+  },
+  {
+    name: "Galette d'avocat",
     price: 13,
     description:
-      "Lait de coco, beurre de cacahuète, curry rouge, grenade et noisettes.",
+      "Pita toastée, labneh, avocat, féta, grenade, suprème de citron, cébette, oignons.",
   },
   {
-    name: "Ratatouille",
-    price: 11,
-    description: "Aubergine, tomate, piment, coriandre, tahini, oeuf mollet.",
-  },
-  {
-    name: "Velouté du moment",
-    price: 10.5,
-    description: "Selon l'humeur de la cheffe.",
+    name: "Turkish eggs",
+    price: 12.5,
+    description:
+      "Huile pimentée coréenne, labneh, ciboulette, oignons, cébette.",
   },
 ];
 const plats = [
   {
+    name: "Assiette Shawarma (k)",
+    price: 17.5,
+    description: "Poulet (k), houmous, patate douce, cébette, coriandre.",
+  },
+  {
     name: "Assiette colorée",
-    price: 16,
+    price: 15.5,
     description:
-      "Houmous, aubergine, patate douce, oeuf poché, chou rouge/carotte, tahini, cébette, oignon rouge.",
+      "Houmous, aubergine, patate douce, oeuf poché, chou rouge, carotte, tahini, cébette, oignon rouge.",
   },
   {
     name: "Assiette du jardin",
-    price: 17,
+    price: 16.5,
     description:
-      "Salade romaine, olive, féta, grenade, oignon rouge, pois chiche, concombre, tomate.",
+      "Labneh, haricots verts, chou-fleur, aubergine, tomate, concombre.",
+  },
+  {
+    name: "Assiette falafel",
+    price: 16,
+    description: "Houmous, falafel, grenade, tomate, menthe, oignons, cébette.",
+  },
+  {
+    name: "Salade fatouche",
+    price: 15.5,
+    description:
+      "Salade romaine, tomate, concombre, croûtons de pita, radis, oeuf mollet, sauce yahourt tahini.",
   },
   {
     name: "Salade Shemesh",
     price: 18,
     description:
-      "Lait de coco, beurre de cacahuète, curry rouge, grenade et noisettes.",
+      "Salade romaine, olives, féta, grenade, oignons rouge, pois chiches, concombre, tomates.",
   },
+];
+const viandes = [
   {
-    name: "Assiette Schnitzel",
-    price: 17,
-    description:
-      "Poulet pané (K) , tomate, concombre, houmous, choux rouge/carotte.",
-  },
-  {
-    name: "Assiette Shawarma",
-    price: 18,
-    description:
-      "Chicken Shawarma, houmous, patate douce, cébette et coriandre.",
-  },
-  {
-    name: "Rosbeef",
-    price: 18,
-    description:
-      "Viande de bœuf (K), câpres, piment, tahini et chutney de tomates.",
+    name: "Rosbeef (k)",
+    price: 17.5,
+    description: "Tahini, câpres, piment, chutney de tomate.",
   },
   {
     name: "Tataki de thon",
-    price: 18,
-    description: "Thon snacké, sauce satai, cacahuète, cébette, piment.",
+    price: 17.5,
+    description:
+      "Sauce satay, tahini, cacahuète, piment, coriandre, oignons rouge, cébette.",
+  },
+  {
+    name: "Ceviche de poisson blanc",
+    price: 17,
+    description: "Poisson blanc, framboise, fenouil, aneth, ciboulette.",
   },
 ];
 const sides = [
   {
-    name: "Salade de tomate-feta",
-    price: 7,
-    description: "Tomates, féta, cébette et sumac.",
+    name: "Tomate-feta",
+    price: 6.5,
   },
   {
     name: "Salade israelienne",
-    price: 6,
-    description:
-      "Tomate, concombre, grenade, oignon rouge, citron, huile d'olive, zaatar.",
+    price: 5.5,
   },
   {
     name: "Pomme de terre",
     price: 6,
-    description: "Yoghurt, tahini, ciboulette.",
   },
   {
-    name: "Jericho beans",
-    price: 7,
-    description: "Haricots, oignons, épices.",
+    name: "Haricots verts",
+    price: 6.5,
   },
 ];
 const streets = [
   {
-    name: "Pita Schnitzel",
-    price: 16.5,
-    description: "Poulet pané (K), tomates, concombre aubergine, tahini.",
+    name: "Pita veggie",
+    price: 15,
+    description: "Chou-fleur rôti, tahini, tomate, concombre, piment.",
   },
   {
-    name: "Pita Veggie",
-    price: 16.5,
-    description:
-      "Chou-fleur rôti, tahini, coriandre. tomate/concombre, piment.",
-  },
-  {
-    name: "Pita Chicken Shawarma",
+    name: "Pita falafel",
     price: 16,
-    description: "Tomate/concombre, tahini, aubergine, coriandre, piment.",
+    description: "Falafel, houmous, tahini, aubergine, tomate, concombre.",
+  },
+  {
+    name: "Pita shawarma (k)",
+    price: 16,
+    description: "Poulet (k), aubergine, tomate, concombre, coriandre, piment.",
+  },
+  {
+    name: "Pita salade de poulet (k)",
+    price: 16,
+    description: "Poulet (k), sauce aïoli, salade verte, tomate, concombre.",
   },
 ];
 const sweets = [
   {
-    name: "La babka de B",
-    price: 8.5,
-    description: "Brioche tressée et fourrée selon l'humeur de la cheffe.",
+    name: "Belle part de babka",
+    price: 8,
+    description: "Brioche fourrée au chocolat.",
   },
   {
     name: "Crumble déstructuré",
-    price: 9.5,
+    price: 9,
     description:
-      "Yaourt, crumble, miel, fruits de saison, menthe, zeste de citron vert.",
+      "Fruits de saison, crumble, yahourt, menthe, zeste de citron, miel.",
   },
   {
     name: "Carpaccio d'ananas d'oranger",
-    price: 8.5,
-    description: "Ananas, orange, menthe, zeste de citron vert.",
+    price: 8,
   },
 ];
 
-export { starters, veges, plats, sides, streets, sweets };
+export { entrees, plats, sides, streets, sweets, veges, viandes };

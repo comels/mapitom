@@ -1,11 +1,19 @@
-import React from "react";
-import Nav from "../components/Nav";
+/* eslint-disable react/prop-types */
 import Footer from "../components/Footer";
-import { starters, sides, veges, streets, plats, sweets } from "../data/menu";
+import Nav from "../components/Nav";
+import {
+  entrees,
+  plats,
+  sides,
+  streets,
+  sweets,
+  veges,
+  viandes,
+} from "../data/menu";
 
 const MenuCategory = ({ title, items }) => (
   <div className="my-6 border-b-2 border-dotted pb-6  border-gray-500">
-    <h2 className="text-3xl text-teal-600 font-extrabold tracking-tighter mt-6 mb-4">
+    <h2 className="text-3xl text-teal-600 font-extrabold tracking-tight mt-6 mb-4">
       {title}
     </h2>
     {items.map((item, index) => (
@@ -30,22 +38,23 @@ const MenuColumn = ({ categories }) => (
 
 const Menu = () => {
   const colonne1 = [
-    { title: "Starters", items: starters },
-    { title: "Sides", items: sides },
-    { title: "Vegetarian", items: veges },
+    { title: "Entrées", items: entrees },
+    { title: "Le coin veggie", items: veges },
+    { title: "Viandes et poissons", items: viandes },
   ];
 
   const colonne2 = [
+    { title: "Assiettes gourmandes", items: plats },
     { title: "Street food", items: streets },
-    { title: "Big plates", items: plats },
-    { title: "Sweet", items: sweets },
+    { title: "Accompagnement", items: sides },
+    { title: "La touche sucrée", items: sweets },
   ];
 
   return (
     <div className="bg-stone-100">
       <Nav />
       <div className="max-w-6xl my-14 mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="font-extrabold pt-10 text-gray-800 tracking-tighter mx-6 mb-3 border-b-2 border-dotted pb-6 border-gray-500 text-5xl sm:text-7xl">
+        <h1 className="font-extrabold pt-20 text-gray-800 tracking-tighter mx-6 mb-3 border-b-2 border-dotted pb-6 border-gray-500 text-5xl sm:text-7xl">
           Menu
         </h1>
         <div className="flex flex-wrap -mx-4">
