@@ -175,7 +175,7 @@ const sweets = [
       "Fruits de saison, crumble, yahourt, menthe, zeste de citron, miel.",
   },
   {
-    name: "Carpaccio d'ananas d'oranger",
+    name: "Carpaccio d'ananas fleur d'oranger",
     price: 8,
   },
 ];
